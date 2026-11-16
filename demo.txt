@@ -1,0 +1,25 @@
+# Студенты и рубрикатор
+student-add s01 | Анна Иванова
+student-add s02 | Илья Петров
+criterion-add project | Проект | 100 | 60
+criterion-add quiz | Тест | 10 | 40
+students
+criteria
+
+# Выставление, исправление и отмена
+grade-set s01 | project | 70 | Первая версия
+grade-set s01 | project | 80 | После исправления
+grade-set s01 | quiz | 9
+grade-set s02 | project | 50
+grade-set s02 | quiz | 5
+grade-cancel s02 | quiz
+grades s01
+grades s02
+
+# Итоги, аналитика и экспорт
+result s01
+result s02
+result s02 | progress
+report
+export results.csv
+exit
